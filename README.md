@@ -9,7 +9,7 @@ A complete full-stack web development system built using **HTML, CSS, JavaScript
 👉 https://priyanshuworks.fwh.is  
 
 ## 📂 Source Code
-👉 https://github.com/priyanshutiwari/web-technology-lab  
+👉 https://github.com/priyanshutiwariz/web-tech-lab.git
 
 ---
 
