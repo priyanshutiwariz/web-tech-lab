@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Priyanshu Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f6f3ee;
+            color: #20242c;
+        }
+        .page-shell {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 32px 18px 48px;
+        }
+        .top-nav {
+            text-align: center;
+            background: #fffdf8;
+            padding: 18px 0;
+            border-bottom: 1px solid #ddd5ca;
+        }
+        .top-nav a {
+            color: #233d4d;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+        .card {
+            margin-top: 32px;
+            padding: 32px;
+            border: 1px solid #ddd5ca;
+            border-radius: 18px;
+            background: #ffffff;
+            box-shadow: 0 20px 40px rgba(32, 36, 44, 0.08);
+        }
+        h1 {
+            margin: 0 0 10px;
+            font-size: 2rem;
+            letter-spacing: -0.02em;
+        }
+        p.lead {
+            margin: 0 0 24px;
+            color: #69717f;
+            line-height: 1.75;
+        }
+        label {
+            display: block;
+            margin-bottom: 12px;
+            color: #233d4d;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #ddd5ca;
+            border-radius: 12px;
+            margin-top: 6px;
+            font-size: 1rem;
+        }
+        .form-actions {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+        }
+        button {
+            border: none;
+            border-radius: 12px;
+            padding: 14px 22px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            color: white;
+            background: #2f6f5e;
+        }
+        .link-row {
+            color: #69717f;
+        }
+        .link-row a {
+            color: #233d4d;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .message {
+            margin-top: 20px;
+            padding: 16px;
+            border-radius: 14px;
+            display: none;
+        }
+        .message.success {
+            background: #e8f2ee;
+            color: #264f3f;
+            border: 1px solid #b6d8c3;
+        }
+        .message.error {
+            background: #fff1ed;
+            color: #7f3222;
+            border: 1px solid #f1c8be;
+        }
+        @media (max-width: 640px) {
+            .form-actions { flex-direction: column; align-items: stretch; }
+            .top-nav a { display: block; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <div class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+            <a href="login.html">Login</a>
+        </div>
+        <div class="card">
+            <h1>Create your account</h1>
+            <p class="lead">Register once and then use the login page to proceed to secure checkout.</p>
+            <form id="registerForm" onsubmit="return validateRegister()">
+                <label for="registerName">Full name</label>
+                <input id="registerName" type="text" placeholder="Your full name">
+                <label for="registerEmail">Email address</label>
+                <input id="registerEmail" type="email" placeholder="name@example.com">
+                <label for="registerPassword">Password</label>
+                <input id="registerPassword" type="password" placeholder="At least 8 characters">
+                <label for="registerConfirm">Confirm password</label>
+                <input id="registerConfirm" type="password" placeholder="Repeat password">
+                <div id="registerMessage" class="message"></div>
+                <div class="form-actions">
+                    <button type="submit">Register</button>
+                    <div class="link-row">Already have an account? <a href="login.html">Login</a></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>

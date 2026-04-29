@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Priyanshu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .product-card-featured {
+            border-color: #2f6f5e;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a class="brand" href="index.html">Priyanshu Store</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-panel">
+                <p class="eyebrow">Product Catalog</p>
+                <h1>Choose your next upgrade.</h1>
+                <p class="lead">Select useful products for work, study, and daily productivity.</p>
+            </div>
+            <aside class="hero-side">
+                <h2 style="color: white;">Catalog Value</h2>
+                <p>Clear pricing, useful descriptions, and a simple flow from product selection to checkout.</p>
+            </aside>
+        </section>
+
+        <form action="cart.html">
+            <section class="section">
+                <h2>Products</h2>
+                <div class="product-grid">
+                    <article class="card product-card-featured">
+                        <span class="pill">Laptop</span>
+                        <h3>ProBook Laptop</h3>
+                        <p>For coding, college, productivity, and business tasks.</p>
+                        <strong class="price">Rs 60,000</strong>
+                        <label><input type="checkbox" name="product" value="Laptop"> Add to cart</label>
+                    </article>
+                    <article class="card">
+                        <span class="pill">Phone</span>
+                        <h3>Smartphone X</h3>
+                        <p>Fast everyday phone with a clean, modern experience.</p>
+                        <strong class="price">Rs 25,000</strong>
+                        <label><input type="checkbox" name="product" value="Smartphone"> Add to cart</label>
+                    </article>
+                    <article class="card">
+                        <span class="pill">Audio</span>
+                        <h3>Studio Headphones</h3>
+                        <p>Comfortable audio for work, calls, and focused sessions.</p>
+                        <strong class="price">Rs 3,000</strong>
+                        <label><input type="checkbox" name="product" value="Headphones"> Add to cart</label>
+                    </article>
+                    <article class="card">
+                        <span class="pill">Accessory</span>
+                        <h3>Mechanical Keyboard</h3>
+                        <p>Precise typing and a satisfying coding setup upgrade.</p>
+                        <strong class="price">Rs 2,000</strong>
+                        <label><input type="checkbox" name="product" value="Keyboard"> Add to cart</label>
+                    </article>
+                    <article class="card">
+                        <span class="pill">Accessory</span>
+                        <h3>Wireless Mouse</h3>
+                        <p>Minimal, accurate, portable, and practical for daily use.</p>
+                        <strong class="price">Rs 1,500</strong>
+                        <label><input type="checkbox" name="product" value="Mouse"> Add to cart</label>
+                    </article>
+                </div>
+                <div class="actions">
+                    <input type="submit" value="Add Selected to Cart" style="letter-spacing: 0;">
+                    <a class="btn" href="cart.html">View Cart</a>
+                </div>
+            </section>
+        </form>
+
+        <p class="footer">2026 Priyanshu Store | CSS-enhanced product catalog</p>
+    </main>
+</body>
+</html>

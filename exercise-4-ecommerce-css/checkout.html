@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Priyanshu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .payment-choice {
+            color: #233d4d;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a class="brand" href="index.html">Priyanshu Store</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-panel">
+                <p class="eyebrow">Checkout</p>
+                <h1>Complete your order.</h1>
+                <p class="lead">Enter delivery information and choose a payment method.</p>
+            </div>
+            <aside class="hero-side">
+                <h2 style="color: white;">Payable Amount</h2>
+                <p><strong>Rs 63,000</strong></p>
+                <p>Delivery: Free</p>
+            </aside>
+        </section>
+
+        <section class="section checkout-layout">
+            <form action="thankyou.html">
+                <fieldset>
+                    <legend>Customer Details</legend>
+                    <label>Name <input type="text" required placeholder="Your full name"></label>
+                    <label>Email <input type="email" required placeholder="Your email"></label>
+                    <label>Phone <input type="tel" required placeholder="Your phone number"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Address</legend>
+                    <label>Address <textarea placeholder="House number, street, area"></textarea></label>
+                    <label>City <input type="text" placeholder="City"></label>
+                    <label>Pincode <input type="number" placeholder="Pincode"></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Payment</legend>
+                    <label class="payment-choice"><input type="radio" name="pay"> Card</label>
+                    <label class="payment-choice"><input type="radio" name="pay"> UPI</label>
+                    <label class="payment-choice"><input type="radio" name="pay"> Cash on Delivery</label>
+                </fieldset>
+
+                <input type="submit" value="Place Order" style="font-weight: 900;">
+            </form>
+
+            <aside class="summary-card">
+                <h2 style="color: white;">Order Summary</h2>
+                <p>ProBook Laptop x 1</p>
+                <p>Studio Headphones x 1</p>
+                <br>
+                <p><strong>Total: Rs 63,000</strong></p>
+            </aside>
+        </section>
+
+        <p class="footer">2026 Priyanshu Store | CSS-enhanced checkout</p>
+    </main>
+</body>
+</html>

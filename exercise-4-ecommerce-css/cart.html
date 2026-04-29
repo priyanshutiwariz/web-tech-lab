@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Priyanshu Store</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .cart-total {
+            color: #2f6f5e;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-inner">
+            <a class="brand" href="index.html">Priyanshu Store</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="checkout.html">Checkout</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-panel">
+                <p class="eyebrow">Shopping Cart</p>
+                <h1>Review your order.</h1>
+                <p class="lead">A clean cart summary for selected products before checkout.</p>
+            </div>
+            <aside class="hero-side">
+                <h2 style="color: white;">Cart Status</h2>
+                <p>Two items selected. Delivery is free on this sample order.</p>
+            </aside>
+        </section>
+
+        <section class="box">
+            <h2>Your Cart</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+                <tr>
+                    <td><strong>ProBook Laptop</strong><br><span class="muted">Performance laptop</span></td>
+                    <td>1</td>
+                    <td>Rs 60,000</td>
+                    <td>Rs 60,000</td>
+                </tr>
+                <tr>
+                    <td><strong>Studio Headphones</strong><br><span class="muted">Comfort audio</span></td>
+                    <td>1</td>
+                    <td>Rs 3,000</td>
+                    <td>Rs 3,000</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3">Total Amount</td>
+                    <td>Rs 63,000</td>
+                </tr>
+            </table>
+            <div class="actions">
+                <a class="btn" href="products.html">Continue Shopping</a>
+                <a class="btn primary" href="checkout.html" style="font-weight: 900;">Proceed to Checkout</a>
+            </div>
+        </section>
+
+        <p class="footer">2026 Priyanshu Store | CSS-enhanced cart</p>
+    </main>
+</body>
+</html>

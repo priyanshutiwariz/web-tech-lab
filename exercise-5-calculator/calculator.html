@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="brand">
+            <h1>Scientific Calculator</h1>
+            <p>Fast, polished, and styled to match the rest of the site.</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="calculator.html">Calculator</a>
+    </nav>
+
+    <main class="page-content">
+        <section class="calc card">
+            <input type="text" id="display" placeholder="0">
+            <div class="calc-buttons">
+                <button class="clear" onclick="clearDisplay()">C</button>
+                <button onclick="append('(')">(</button>
+                <button onclick="append(')')">)</button>
+                <button onclick="append('/')">/</button>
+
+                <button onclick="append('7')">7</button>
+                <button onclick="append('8')">8</button>
+                <button onclick="append('9')">9</button>
+                <button onclick="append('*')">*</button>
+
+                <button onclick="append('4')">4</button>
+                <button onclick="append('5')">5</button>
+                <button onclick="append('6')">6</button>
+                <button onclick="append('-')">-</button>
+
+                <button onclick="append('1')">1</button>
+                <button onclick="append('2')">2</button>
+                <button onclick="append('3')">3</button>
+                <button onclick="append('+')">+</button>
+
+                <button onclick="append('0')">0</button>
+                <button onclick="append('.')">.</button>
+                <button class="equal" onclick="calculate()">=</button>
+                <button onclick="append('Math.sqrt(')">√</button>
+
+                <button onclick="append('Math.sin(')">sin</button>
+                <button onclick="append('Math.cos(')">cos</button>
+                <button onclick="append('Math.tan(')">tan</button>
+                <button onclick="append('Math.pow(')">^</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

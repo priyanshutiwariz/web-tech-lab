@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Priyanshu Store</title>
+</head>
+<body bgcolor="#f6f3ee" text="#20242c" link="#2f6f5e" vlink="#2f6f5e" alink="#233d4d">
+    <font face="Arial, Helvetica, sans-serif">
+        <center>
+            <table width="100%" cellpadding="18" cellspacing="0" border="0" bgcolor="#fffdf8">
+                <tr>
+                    <td width="45%" align="center"><font size="5"><b>Priyanshu Store</b></font></td>
+                    <td width="55%" align="center">
+                        <a href="index.html"><b>Home</b></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="products.html"><b>Products</b></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="cart.html"><b>Cart</b></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="checkout.html"><b>Checkout</b></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="login.html"><b>Login</b></a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="register.html"><b>Register</b></a>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <center>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                <tr><td bgcolor="#ddd5ca" height="1"></td></tr>
+            </table>
+        </center>
+
+        <br><br>
+
+        <center>
+            <table width="88%" cellpadding="28" cellspacing="0" border="1" bordercolor="#ddd5ca" bgcolor="#fffdf8">
+                <tr>
+                    <td width="65%">
+                        <font color="#2f6f5e"><b>PRODUCT CATALOG</b></font>
+                        <h1><font size="6">Choose your next tech upgrade.</font></h1>
+                        <p><font color="#69717f">Select products and quantities, then continue to the cart.</font></p>
+                    </td>
+                    <td width="35%" bgcolor="#233d4d">
+                        <font color="#ffffff">
+                            <h2>Store Promise</h2>
+                            <p>Clear pricing, useful products, and a simple checkout experience.</p>
+                        </font>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <br>
+
+        <form id="productForm" action="cart.html" method="get">
+            <center>
+                <table width="88%" cellpadding="18" cellspacing="0" border="1" bordercolor="#ddd5ca" bgcolor="#fffdf8">
+                    <tr bgcolor="#e8f2ee">
+                        <th>Select</th>
+                        <th>Product</th>
+                        <th>Category</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                    </tr>
+                    <tr>
+                        <td align="center"><input id="productLaptop" type="checkbox" name="product" value="Laptop" data-price="60000"></td>
+                        <td><b>ProBook Laptop</b><br><font color="#69717f">For coding, college, and productivity</font></td>
+                        <td>Laptops</td>
+                        <td><b>Rs 60,000</b></td>
+                        <td><input id="qty_laptop" type="number" name="qty_laptop" min="1" value="1"></td>
+                    </tr>
+                    <tr bgcolor="#fffaf1">
+                        <td align="center"><input id="productPhone" type="checkbox" name="product" value="Smartphone" data-price="25000"></td>
+                        <td><b>Smartphone X</b><br><font color="#69717f">Fast everyday phone with clean design</font></td>
+                        <td>Smartphones</td>
+                        <td><b>Rs 25,000</b></td>
+                        <td><input id="qty_phone" type="number" name="qty_phone" min="1" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input id="productHeadphones" type="checkbox" name="product" value="Headphones" data-price="3000"></td>
+                        <td><b>Studio Headphones</b><br><font color="#69717f">Comfortable audio for work and calls</font></td>
+                        <td>Accessories</td>
+                        <td><b>Rs 3,000</b></td>
+                        <td><input id="qty_headphones" type="number" name="qty_headphones" min="1" value="1"></td>
+                    </tr>
+                    <tr bgcolor="#fffaf1">
+                        <td align="center"><input id="productKeyboard" type="checkbox" name="product" value="Keyboard" data-price="2000"></td>
+                        <td><b>Mechanical Keyboard</b><br><font color="#69717f">Precise typing for coding sessions</font></td>
+                        <td>Accessories</td>
+                        <td><b>Rs 2,000</b></td>
+                        <td><input id="qty_keyboard" type="number" name="qty_keyboard" min="1" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input id="productMouse" type="checkbox" name="product" value="Mouse" data-price="1500"></td>
+                        <td><b>Wireless Mouse</b><br><font color="#69717f">Minimal, accurate, and portable</font></td>
+                        <td>Accessories</td>
+                        <td><b>Rs 1,500</b></td>
+                        <td><input id="qty_mouse" type="number" name="qty_mouse" min="1" value="1"></td>
+                    </tr>
+                    <tr bgcolor="#e8f2ee">
+                        <td colspan="5" align="center">
+                            <input type="submit" value="Add Selected to Cart">
+                            &nbsp;&nbsp;
+                            <a href="cart.html"><b>View Cart</b></a>
+                        </td>
+                    </tr>
+                </table>
+                <div id="productSummary" style="padding:14px; color:#233d4d; font-weight:bold; text-align:left;">No products selected yet.</div>
+            </center>
+        </form>
+        <script src="validation.js"></script>
+        <script src="events.js"></script>
+
+        <br><br>
+        <center><font color="#69717f">2026 Priyanshu Store | HTML-only product catalog</font></center>
+        <br>
+    </font>
+</body>
+</html>
